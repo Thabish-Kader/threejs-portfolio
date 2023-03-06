@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import HeroCanvas from "./canvas/HeroCanvas";
 
 const Hero = () => {
 	return (
@@ -19,11 +20,13 @@ const Hero = () => {
 						Hi, I'm <span className="text-[#915eff]">thabish</span>
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						{/* TODO: Change the message */}I create stunning 3D UI
+						{/* TODO: Change the message */}I create stunning 3D UI,{" "}
+						<br className="sm:block hidden" />
 						for web applications
 					</p>
 				</div>
 			</div>
+			<HeroCanvas />
 		</section>
 	);
 };
