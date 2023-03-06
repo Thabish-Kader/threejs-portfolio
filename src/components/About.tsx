@@ -1,9 +1,14 @@
-import React from 'react'
+import { motion } from "framer-motion";
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+	return (
+		<>
+			<motion.div>
+				<p className="sectionSubText">About</p>
+				<h2 className="sectionHeadText">Overview</h2>
+			</motion.div>
+		</>
+	);
+};
 
-export default About
+export default About;
