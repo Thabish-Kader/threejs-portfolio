@@ -44,6 +44,7 @@ const Navbar = () => {
 					))}
 				</ul>
 				{/* mobile view */}
+				{/* TODO: Change the styling of background of mobile view */}
 				<div className="sm:hidden flex flex-1 justify-end items-center">
 					<img
 						src={toggle ? menu : close}

@@ -85,14 +85,17 @@ export const fadeIn = (
 // 	};
 // };
 
-// export const staggerContainer = (staggerChildren, delayChildren) => {
-// 	return {
-// 		hidden: {},
-// 		show: {
-// 			transition: {
-// 				staggerChildren: staggerChildren,
-// 				delayChildren: delayChildren || 0,
-// 			},
-// 		},
-// 	};
-// };
+export const staggerContainer = (
+	staggerChildren: number,
+	delayChildren: number
+) => {
+	return {
+		hidden: {},
+		show: {
+			transition: {
+				staggerChildren: staggerChildren,
+				delayChildren: delayChildren || 0,
+			},
+		},
+	};
+};
