@@ -1,7 +1,7 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import Loader from "../Loader";
+import MyLoader from "../MyLoader";
 
 const Computer = ({ isMobile }: { isMobile: boolean }) => {
 	const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -13,7 +13,6 @@ const Computer = ({ isMobile }: { isMobile: boolean }) => {
 				position={[-20, 50, 10]}
 				angle={0.12}
 				penumbra={1}
-				intenstiy={1}
 				castShadow
 				shadow-mapSize={1024}
 			/>
@@ -54,7 +53,7 @@ const HeroCanvas = () => {
 			camera={{ position: [20, 3, 5], fov: 25 }}
 			gl={{ preserveDrawingBuffer: true }}
 		>
-			<Suspense fallback={<Loader />}>
+			<Suspense fallback={<MyLoader />}>
 				<OrbitControls
 					enableZoom={false}
 					maxPolarAngle={Math.PI / 2}
