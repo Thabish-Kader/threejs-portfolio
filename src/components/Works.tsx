@@ -91,11 +91,13 @@ const Works = () => {
 					variants={fadeIn("", "", 0.1, 0.1)}
 					className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
 				>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-					Placeat pariatur asperiores omnis vitae, obcaecati adipisci
-					nulla, impedit illum facere consequuntur iusto eaque
-					laboriosam, blanditiis labore. Error fugit labore vero
-					explicabo.
+					This section showcases my professional skills and
+					experience. It features projects that I have successfully
+					completed through research, planning, and execution. The
+					section demonstrates my commitment to excellence and passion
+					for my work, whether it's designing a website, creating a
+					marketing campaign, or developing software. Explore the
+					section to see the breadth and depth of my expertise
 				</motion.p>
 			</div>
 

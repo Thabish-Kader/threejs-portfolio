@@ -20,8 +20,9 @@ import tailwind from "./assets/tech/tailwind.png";
 import threejs from "./assets/tech/threejs.svg";
 import typescript from "./assets/tech/typescript.png";
 import git from "./assets/tech/git.png";
-
-import { carrent, jobit, tripguide } from "./assets";
+import reddit from "./assets/projects/reddit.png";
+import solemates from "./assets/projects/solemates.png";
+import amazon from "./assets/projects/amazon.png";
 
 export const navLinks = [
 	{
@@ -219,69 +220,74 @@ export const testimonials = [
 
 export const projects = [
 	{
-		name: "Car Rent",
+		name: "3D Brochure Site",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			'The "Soule Mates" project was built using Three.js, React Three Fiber, and GSAP to explore the possibilities of animation in Three.js. The project is a visually engaging experience that showcases the power of these three technologies when used together.',
+		tags: [
+			{
+				name: "threejs",
+				color: "text-white",
+			},
+			{
+				name: "react-three-fiber",
+				color: "text-blue-600",
+			},
+			{
+				name: "gsap",
+				color: "text-green-600",
+			},
+		],
+		image: solemates,
+		codeLink:
+			"https://github.com/Thabish-Kader/r3f-scroll/tree/main/scroll-based-animaiton",
+		live: "https://r3f-scroll-three.vercel.app/",
+	},
+	{
+		name: "Reddit Clone",
+		description:
+			'A "Reddit clone" built using Next.js, Firebase, NextAuth, and GraphQL is a highly scalable, real-time, and dynamic social media website that closely mimics the features and user experience of the original Reddit website.',
 		tags: [
 			{
 				name: "react",
-				color: "blue-text-gradient",
+				color: "text-blue-500",
 			},
 			{
-				name: "mongodb",
-				color: "green-text-gradient",
+				name: "nextjs",
+				color: "text-white",
+			},
+			{
+				name: "firebase",
+				color: "text-yellow-500",
 			},
 			{
 				name: "tailwind",
-				color: "pink-text-gradient",
+				color: "text-green-500",
 			},
 		],
-		image: carrent,
-		codeLink: "https://github.com/",
-		live: "https://github.com/",
+		image: reddit,
+		codeLink: "https://github.com/Thabish-Kader/reddit-next-app",
+		live: "https://reddit-next-app.vercel.app/",
 	},
 	{
-		name: "Job IT",
+		name: "Amazon Clone",
 		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "restapi",
-				color: "green-text-gradient",
-			},
-			{
-				name: "scss",
-				color: "pink-text-gradient",
-			},
-		],
-		image: jobit,
-		codeLink: "https://github.com/",
-		live: "https://github.com/",
-	},
-	{
-		name: "Trip Guide",
-		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+			'An "Amazon clone" built using Next.js, Tailwind CSS, NextAuth, Redux, and GraphQL with Stripe API which makes it a highly functional, fast, and dynamic e-commerce website that closely mimics the features and user experience of the original Amazon website.  ',
 		tags: [
 			{
 				name: "nextjs",
-				color: "blue-text-gradient",
+				color: "text-white",
 			},
 			{
-				name: "supabase",
-				color: "green-text-gradient",
+				name: "redux",
+				color: "text-purple-500",
 			},
 			{
-				name: "css",
-				color: "pink-text-gradient",
+				name: "typescript",
+				color: "text-blue-800",
 			},
 		],
-		image: tripguide,
-		codeLink: "https://github.com/",
-		live: "https://github.com/",
+		image: amazon,
+		codeLink: "https://github.com/Thabish-Kader/Amazon-next-app",
+		live: "https://amazon-next-app-zqtc.vercel.app/",
 	},
 ];
