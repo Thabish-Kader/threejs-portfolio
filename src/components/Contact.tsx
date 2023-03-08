@@ -3,13 +3,42 @@ import { SectionWrapper } from "../hoc/SectionWrapper";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import EarthCanvas from "./canvas/EarthCanvas";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
 	const formRef = useRef<HTMLFormElement>(null);
 	const [form, setForm] = useState({ name: "", email: "", message: "" });
 	const [loading, setLoading] = useState(false);
-	// const handleChange = () = {}
-	const handleSubmit = (e: FormEvent) => {};
+
+	const handleSubmit = (e: FormEvent) => {
+		e.preventDefault();
+		setLoading(true);
+		emailjs
+			.send(
+				"service_oeoqx8n",
+				"template_2yhuvfq",
+				{
+					from_name: form.name,
+					to_name: "Thabish",
+					from_email: form.email,
+					to_email: "kadertabish2@gmail.com",
+					message: form.message,
+				},
+				"VE2gxGpcgEUvUNm1t"
+			)
+			.then(
+				() => {
+					setLoading(false),
+						alert("I will get back to you as soon as possible");
+					setForm({ name: "", email: "", message: "" });
+				},
+				(error) => {
+					setLoading(false);
+					console.log(error);
+					alert("Something went wrong");
+				}
+			);
+	};
 
 	return (
 		<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
