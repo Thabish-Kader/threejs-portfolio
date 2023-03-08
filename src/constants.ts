@@ -216,7 +216,8 @@ export const projects = [
 			},
 		],
 		image: carrent,
-		source_code_link: "https://github.com/",
+		codeLink: "https://github.com/",
+		live: "https://github.com/",
 	},
 	{
 		name: "Job IT",
@@ -237,7 +238,8 @@ export const projects = [
 			},
 		],
 		image: jobit,
-		source_code_link: "https://github.com/",
+		codeLink: "https://github.com/",
+		live: "https://github.com/",
 	},
 	{
 		name: "Trip Guide",
@@ -258,6 +260,7 @@ export const projects = [
 			},
 		],
 		image: tripguide,
-		source_code_link: "https://github.com/",
+		codeLink: "https://github.com/",
+		live: "https://github.com/",
 	},
 ];
