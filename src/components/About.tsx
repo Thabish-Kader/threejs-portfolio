@@ -44,11 +44,21 @@ const About = () => {
 				variants={fadeIn("", "", 0.1, 1)}
 				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 			>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-				Molestiae quaerat aut nam. Obcaecati nemo sunt reprehenderit
-				quibusdam, rerum numquam quaerat autem odio modi facere non
-				nihil architecto tempora explicabo corporis? Illum dicta eum
-				eveniet esse dolorum perferendis praesentium delectus
+				Hey there, fellow techies! I'm thabish, a software engineer who
+				loves creating beautiful and functional web applications. With a
+				keen eye for design and a passion for clean, efficient code, I
+				enjoy exploring the latest tools and frameworks to stay on the
+				cutting edge of web development. From React, Next.js, and
+				GraphQL to Redux, TRPC, and Tailwind CSS, I'm always up for a
+				new challenge. But my true love lies in the endless
+				possibilities of Three.js, especially when paired with React
+				Three Fiber. There's nothing quite like the rush of bringing
+				complex 3D models to life with just a few lines of code! So
+				whether you're a fellow developer, a curious user, or just
+				someone looking to connect with like-minded creatives, I welcome
+				you to my portfolio and invite you to join me on this exciting
+				journey of innovation and discovery. Let's create something
+				amazing together!
 			</motion.p>
 
 			<div className="mt-20 flex flex-wrap gap-10">

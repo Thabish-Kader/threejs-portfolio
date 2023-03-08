@@ -4,7 +4,7 @@ import { useState } from "react";
 import { logo, menu, close } from "../assets";
 const Navbar = () => {
 	const [active, setActive] = useState("");
-	const [toggle, setToggle] = useState(false);
+	const [toggle, setToggle] = useState(true);
 	return (
 		<nav className="paddingX w-full flex items-center py-5 fixed top-0 z-20 bg-primary">
 			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">

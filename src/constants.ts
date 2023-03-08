@@ -1,29 +1,27 @@
-import web from "./assets/web.png";
-import mobile from "./assets/mobile.png";
-import backend from "./assets/backend.png";
-import creator from "./assets/creator.png";
+import comp from "./assets/computer.png";
+import light from "./assets/light.png";
+import openSource from "./assets/openSource.png";
+import contentCreator from "./assets/contentCreator.png";
+import mec from "./assets/mec.png";
+import frontEnd from "./assets/frontend.png";
+import google from "./assets/google.webp";
+import prisma from "./assets/prisma.webp";
+import fullstack from "./assets/fullstack.png";
+import yt from "./assets/yt.svg";
+import next from "./assets/next.svg";
 import html from "./assets/tech/html.png";
-import {
-	carrent,
-	css,
-	docker,
-	figma,
-	git,
-	javascript,
-	jobit,
-	meta,
-	mongodb,
-	nodejs,
-	reactjs,
-	redux,
-	shopify,
-	starbucks,
-	tailwind,
-	tesla,
-	threejs,
-	tripguide,
-	typescript,
-} from "./assets";
+import three from "./assets/three2.png";
+import css from "./assets/tech/css.png";
+import javascript from "./assets/tech/javascript.png";
+import nodejs from "./assets/tech/nodejs.png";
+import reactjs from "./assets/tech/reactjs.png";
+import redux from "./assets/tech/redux.png";
+import tailwind from "./assets/tech/tailwind.png";
+import threejs from "./assets/tech/threejs.svg";
+import typescript from "./assets/tech/typescript.png";
+import git from "./assets/tech/git.png";
+
+import { carrent, jobit, tripguide } from "./assets";
 
 export const navLinks = [
 	{
@@ -43,19 +41,19 @@ export const navLinks = [
 export const services = [
 	{
 		title: "Web Developer",
-		icon: web,
+		icon: comp,
 	},
 	{
-		title: "React Native Developer",
-		icon: mobile,
+		title: "Creative Developer",
+		icon: light,
 	},
 	{
-		title: "Backend Developer",
-		icon: backend,
+		title: "Open Source Enthusiast",
+		icon: openSource,
 	},
 	{
 		title: "Content Creator",
-		icon: creator,
+		icon: contentCreator,
 	},
 ];
 
@@ -89,82 +87,105 @@ export const technologies = [
 		icon: tailwind,
 	},
 	{
+		name: "Next JS",
+		icon: next,
+	},
+	{
 		name: "Node JS",
 		icon: nodejs,
 	},
 	{
-		name: "MongoDB",
-		icon: mongodb,
+		name: "Prisma",
+		icon: prisma,
 	},
 	{
 		name: "Three JS",
-		icon: threejs,
+		icon: three,
 	},
 	{
 		name: "git",
 		icon: git,
 	},
-	{
-		name: "figma",
-		icon: figma,
-	},
-	{
-		name: "docker",
-		icon: docker,
-	},
 ];
 
 export const experiences = [
 	{
-		title: "React.js Developer",
-		company_name: "Starbucks",
-		icon: starbucks,
+		title: "Bachelors in Computer Science (Hons)",
+		company_name: "MEC",
+		icon: mec,
 		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
+		date: "Oct 2019 - Jun 2023",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			"Understood core computer science concepts: Such as algorithms and data structures, computer architecture, operating systems, programming languages, and software engineering principles",
+			"Got proficient in programming languages: Such as Java, Python, C++",
+			"Acquired the ability to design and develop software systems",
+			"Understood the importance of software development methodologies:",
 		],
 	},
 	{
-		title: "React Native Developer",
-		company_name: "Tesla",
-		icon: tesla,
+		title: "Google Data Analytics Program",
+		company_name: "Google",
+		icon: google,
 		iconBg: "#E6DEDD",
-		date: "Jan 2021 - Feb 2022",
+		date: "Jan 2022 - Feb 2022",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			"Learnt data analysis fundamentals",
+			"Implemented statistics and probability",
+			"Used data visualization techniques to get an insight on data",
+			"Used data to get business analytics",
 		],
 	},
 	{
-		title: "Web Developer",
-		company_name: "Shopify",
-		icon: shopify,
+		title: "Front End Projects",
+		company_name: "Self",
+		icon: frontEnd,
 		iconBg: "#383E56",
-		date: "Jan 2022 - Jan 2023",
+		date: "Feb 2022 - Oct 2022",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			"TypeScript: Defined types and generics for better code organization and safety",
+			"React: Created and managed components with hooks and context, and used  features like Suspense and state management",
+			"Next.js: Configured dynamic routing and data sources, optimizing website performance, and using advanced features like Incremental Static Regeneration and Preview Mode.",
+			"Tailwind CSS: Created responsive and custom styles with a utility-first approach, and optimizing website performance with built-in features like variants and plugins.",
 		],
 	},
 	{
 		title: "Full stack Developer",
-		company_name: "Meta",
-		icon: meta,
+		company_name: "Self",
+		icon: fullstack,
 		iconBg: "#E6DEDD",
-		date: "Jan 2023 - Present",
+		date: "Oct 2022 - present",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			"Firebase: Configured and used Firebase services like Authentication, Firestore, and Cloud Functions to implement real-time data synchronization and host and deploy your application.",
+			"Express: Created and managed REST APIs, implementing authentication and authorization, and using middleware to handle common tasks.",
+			"Prisma: Defined data models and relationships, using Prisma Client to query and mutate data, and implementing database migrations.",
+			"PostgreSQL: Set up and configed a PostgreSQL database, using SQL to query and manipulate data, and optimizing database performance.",
+		],
+	},
+	{
+		title: "YouTube Creator",
+		company_name: "YouTube",
+		icon: yt,
+		iconBg: "#E6DEDD",
+		date: "Dec 2022 - present",
+		points: [
+			"Giving back to the community",
+			"Created coding tutorials",
+			"Broke down complex topics",
+			"Building a community",
+			"YouTube Link : https://www.youtube.com/channel/UCv4o5GTLBg2IH2P7iYj1nwQ",
+		],
+	},
+	{
+		title: "Three Js Developer / React Three Fiber",
+		company_name: "Self",
+		icon: threejs,
+		iconBg: "#E6DEDD",
+		date: "Feb 2022 - present",
+		points: [
+			"Integrate Three.js and React Three Fiber with other web technologies, such as React and WebGL to create complex and interactive 3D websites.",
+			"Creating and manipulating 3D objects in web ",
+			"Worked with 3D space and camera controls",
+			"Implemented lighting and shading",
 		],
 	},
 ];
