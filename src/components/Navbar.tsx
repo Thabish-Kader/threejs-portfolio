@@ -2,8 +2,9 @@ import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { logo, menu, close } from "../assets";
+import { SocialIcon } from "react-social-icons";
+
 const Navbar = () => {
-	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(true);
 	return (
 		<nav className="paddingX w-full flex items-center py-5 fixed top-0 z-20 bg-primary">
@@ -12,7 +13,6 @@ const Navbar = () => {
 					to="/"
 					className="flex items-center gap-2"
 					onClick={() => {
-						setActive("");
 						window.scrollTo(0, 0);
 					}}
 				>
@@ -28,21 +28,43 @@ const Navbar = () => {
 						</span>
 					</p>
 				</Link>
-				<ul className="list-none hidden sm:flex flex-row gap-10">
-					{navLinks.map((link) => (
-						<li
-							key={link.id}
-							className={`${
-								active === link.title
-									? "text-red-500"
-									: "text-secondary"
-							} hover:text-red-500 text-[18px]`}
-							onClick={() => setActive(link.title)}
-						>
-							<a href={`#${link.id}`}>{link.title}</a>
-						</li>
-					))}
-				</ul>
+
+				<div className="hidden lg:flex items-center gap-10">
+					<a href="#about">About</a>
+					<a href="#work">Journey</a>
+					<a href="#contact">Contact</a>
+				</div>
+
+				<div className=" hidden sm:flex flex-row gap-3">
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#64ffda"
+						style={{ height: 60, width: 60 }}
+						target="_blank"
+						url="https://www.linkedin.com/in/thabish-a-kader-366447224/"
+					/>
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#64ffda"
+						style={{ height: 60, width: 60 }}
+						target="_blank"
+						url="https://twitter.com/DeveloperTak"
+					/>
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#64ffda"
+						style={{ height: 60, width: 60 }}
+						target="_blank"
+						url="https://github.com/Thabish-Kader"
+					/>
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#64ffda"
+						style={{ height: 60, width: 60 }}
+						target="_blank"
+						url="https://www.youtube.com/channel/UCv4o5GTLBg2IH2P7iYj1nwQ"
+					/>
+				</div>
 				{/* mobile view */}
 				{/* TODO: Change the styling of background of mobile view */}
 				<div className="sm:hidden flex flex-1 justify-end items-center">
@@ -55,23 +77,20 @@ const Navbar = () => {
 					<div
 						className={`${
 							toggle ? "hidden" : "flex"
-						} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+						} p-6 bg-tertiary absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
 					>
 						<ul className="list-none flex justify-end items-start flex-col gap-4">
-							{navLinks.map((link) => (
+							{navLinks.map((link, i) => (
 								<li
-									key={link.id}
-									className={`${
-										active === link.title
-											? "text-red-500"
-											: "text-secondary"
-									} font-poppins font-medium cursor-pointer text-[16px]`}
+									key={i}
+									className="text-secondary font-poppins font-medium cursor-pointer text-[16px]"
 									onClick={() => {
 										setToggle(!toggle);
-										setActive(link.title);
 									}}
 								>
-									<a href={`#${link.id}`}>{link.title}</a>
+									<a href={link.link} target="_blank">
+										{link.title}
+									</a>
 								</li>
 							))}
 						</ul>

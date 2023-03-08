@@ -9,6 +9,7 @@ type testimonialType = {
 	designation: string;
 	company: string;
 	image: string;
+	link: string;
 };
 
 const FeedBackCard = ({
@@ -29,14 +30,16 @@ const FeedBackCard = ({
 			</p>
 			<div className="mt-7 flex justify-between items-center gap-1">
 				<div className="flex-1 flex flex-col">
-					<p className="text-white font-medium text-[16px]">
-						<span className="blue-text-gradient">@</span>
-						{testimonial.name}
-					</p>
+					<a href={testimonial.link}>
+						<p className="text-white font-medium text-[16px]">
+							<span className="blue-text-gradient">@</span>
+							{testimonial.name}
+						</p>
 
-					<p className="mt-1 text-secondary text-[12px]">
-						{testimonial.designation} of {testimonial.company}
-					</p>
+						<p className="mt-1 text-secondary text-[12px]">
+							{testimonial.designation} of {testimonial.company}
+						</p>
+					</a>
 				</div>
 				<img
 					className="h-10 w-10 rounded-full object-cover"

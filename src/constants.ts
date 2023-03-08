@@ -23,19 +23,24 @@ import git from "./assets/tech/git.png";
 import reddit from "./assets/projects/reddit.png";
 import solemates from "./assets/projects/solemates.png";
 import amazon from "./assets/projects/amazon.png";
+import testimonial1 from "./assets/testimonial/testimonial1.jpg";
 
 export const navLinks = [
 	{
-		id: "about",
-		title: "About",
+		link: "https://www.linkedin.com/in/thabish-a-kader-366447224/",
+		title: "linkedIn",
 	},
 	{
-		id: "work",
-		title: "Work",
+		link: "https://twitter.com/DeveloperTak",
+		title: "Twitter",
 	},
 	{
-		id: "contact",
-		title: "Contact",
+		link: "https://github.com/Thabish-Kader",
+		title: "Github",
+	},
+	{
+		link: "https://www.youtube.com/channel/UCv4o5GTLBg2IH2P7iYj1nwQ",
+		title: "Youtube",
 	},
 ];
 
@@ -194,27 +199,29 @@ export const experiences = [
 export const testimonials = [
 	{
 		testimonial:
-			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-		name: "Sara Lee",
-		designation: "CFO",
-		company: "Acme Co",
-		image: "https://randomuser.me/api/portraits/women/4.jpg",
+			"Really glad I found your video, you explained everything clearly and went about it step by step while explaining why something is done a certain way! Most other videos I could find either used templates or didn't explain why something was used at all. Thanks for making the video! :)",
+		name: "Friendliness",
+		designation: "Subscriber",
+		company: "YouTube",
+		image: testimonial1,
+		link: "https://www.youtube.com/channel/UC_EQetD_uzO4C9vXXoT4jNw",
 	},
 	{
 		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
-		name: "Chris Brown",
-		designation: "COO",
-		company: "DEF Corp",
-		image: "https://randomuser.me/api/portraits/men/5.jpg",
+			"Hi Sir! Great video i was exactly looking for some graphql content😀 Can you pls make tutorial on Authentication with graphql on both frontend and backend. Would love to see that",
+		name: "The Coder",
+		designation: "Subscriber",
+		company: "Youtube",
+		image: "https://yt3.ggpht.com/ytc/AL5GRJVk4C6Opm5EknIFtiXLZFlf3li0xa2dlqnM4euu8o8-MwGjbUxhVQbKNySOx3MG=s88-c-k-c0x00ffffff-no-rj",
+		link: "https://www.youtube.com/channel/UCLr600-2OclKW3ghrzUcO5w",
 	},
 	{
-		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: "Lisa Wang",
-		designation: "CTO",
-		company: "456 Enterprises",
-		image: "https://randomuser.me/api/portraits/women/6.jpg",
+		testimonial: "Finding this was hard.. worth it..",
+		name: "Pranav Babu",
+		designation: "Subscriber",
+		company: "Youtube",
+		image: "https://yt3.ggpht.com/ytc/AL5GRJXlSdJdSceW_Zfw92NEv_QHdqVTkVgDhHmWfiD-vQ=s88-c-k-c0x00ffffff-no-rj",
+		link: "https://www.youtube.com/channel/UCZsquG9rsHptByCDJh983LQ",
 	},
 ];
 
