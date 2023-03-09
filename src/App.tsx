@@ -13,14 +13,13 @@ import { AvatarCanvas } from "./components/canvas/AvatarCanvas";
 const App = () => {
 	return (
 		<BrowserRouter>
-			{/* <div className="relative z-0 bg-primary">
-
+			<div className="relative z-0 bg-primary">
 				<div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
 					<Navbar />
 					<Hero />
 				</div>
 
-				<About />
+				{/* <About />
 				<Experience />
 				<Tech />
 				<Works />
@@ -28,11 +27,11 @@ const App = () => {
 				<div className="relative z-0">
 					<Contact />
 					<StartsCanvas />
-				</div>
-			</div> */}
-			<div className="h-screen">
-				<AvatarCanvas />
+				</div> */}
 			</div>
+			{/* <div className="h-screen">
+				<AvatarCanvas />
+			</div> */}
 		</BrowserRouter>
 	);
 };
