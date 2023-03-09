@@ -7,11 +7,7 @@ const Avatar = () => {
 	const { scene, nodes } = useGLTF("/avatar.glb") as any;
 	const avatar = useGLTF("/avatar.glb") as any;
 	const animations = useAnimations(avatar.animations, avatar.scene);
-	// console.log(animations);
-	// useEffect(() => {
-	// 	const action = animations?.actions?.names[1];
-	// 	action.play();
-	// }, []);
+
 	return (
 		<>
 			<ambientLight />
