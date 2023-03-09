@@ -8,12 +8,13 @@ import Tech from "./components/Tech";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
 import StartsCanvas from "./components/canvas/StarsCanvas";
+import { AvatarCanvas } from "./components/canvas/AvatarCanvas";
 
 const App = () => {
 	return (
 		<BrowserRouter>
-			<div className="relative z-0 bg-primary">
-				{/* TODO: Change background img */}
+			{/* <div className="relative z-0 bg-primary">
+
 				<div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
 					<Navbar />
 					<Hero />
@@ -28,6 +29,9 @@ const App = () => {
 					<Contact />
 					<StartsCanvas />
 				</div>
+			</div> */}
+			<div className="h-screen">
+				<AvatarCanvas />
 			</div>
 		</BrowserRouter>
 	);
