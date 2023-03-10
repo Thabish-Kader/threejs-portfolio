@@ -2,7 +2,6 @@ import { FormEvent, useRef, useState, Fragment } from "react";
 import { SectionWrapper } from "../hoc/SectionWrapper";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
-
 import emailjs from "@emailjs/browser";
 import { Dialog, Transition } from "@headlessui/react";
 import { SocialIcon } from "react-social-icons";

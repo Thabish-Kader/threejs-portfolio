@@ -1,4 +1,3 @@
-import React from "react";
 import { SectionWrapper } from "../hoc/SectionWrapper";
 import { technologies } from "../constants";
 import ToolsCanvas from "./canvas/ToolsCanvas";

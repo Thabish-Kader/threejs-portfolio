@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-
-import HeroCanvas from "./canvas/HeroCanvas";
 import { AvatarCanvas } from "./canvas/AvatarCanvas";
 
 const Hero = () => {
