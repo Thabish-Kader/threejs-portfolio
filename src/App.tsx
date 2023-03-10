@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Timeline from "./components/Timeline";
-import Works from "./components/Works";
+import Projects from "./components/Projects";
 import Tech from "./components/Tech";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
@@ -21,7 +21,7 @@ const App = () => {
 				<About />
 				<Timeline />
 				<Tech />
-				<Works />
+				<Projects />
 				<Feedbacks />
 				<div className="relative z-0">
 					<Contact />

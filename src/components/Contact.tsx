@@ -50,10 +50,10 @@ const Contact = () => {
 		<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
 			<motion.div
 				variants={slideIn("left", "tween", 0.2, 1)}
-				className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+				className="flex-[0.75] bg-slate-800 p-8 rounded-2xl"
 			>
-				<p className="sectionSubText">Get in touch</p>
-				<p className="sectionHeadText">Contact</p>
+				<p className="sectionSubHeading">Get in touch</p>
+				<p className="sectionHeading">Contact</p>
 
 				<form
 					ref={formRef}
@@ -62,8 +62,8 @@ const Contact = () => {
 				>
 					{/* name */}
 					<label htmlFor="" className="flex flex-col">
-						<span className="text-white font-medium mb-4">
-							Your Name
+						<span className="text-slate-300 font-medium mb-4">
+							Name
 						</span>
 						<input
 							type="text"
@@ -73,13 +73,13 @@ const Contact = () => {
 								setForm({ ...form, name: e.target.value })
 							}
 							placeholder="What's your name"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							className="bg-slate-700 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					{/* email */}
 					<label htmlFor="" className="flex flex-col">
-						<span className="text-white font-medium mb-4">
-							Your Email
+						<span className="text-slate-300 font-medium mb-4">
+							Email
 						</span>
 						<input
 							type="email"
@@ -89,14 +89,14 @@ const Contact = () => {
 								setForm({ ...form, email: e.target.value })
 							}
 							placeholder="What's your email"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							className="bg-slate-700 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 
 					{/* message */}
 					<label htmlFor="" className="flex flex-col">
-						<span className="text-white font-medium mb-4">
-							Your message
+						<span className="text-slate-300 font-medium mb-4">
+							Message
 						</span>
 						<textarea
 							rows={7}
@@ -106,12 +106,12 @@ const Contact = () => {
 								setForm({ ...form, message: e.target.value })
 							}
 							placeholder="Would you like to say something?"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							className="bg-slate-700 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					<button
 						type="submit"
-						className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+						className="bg-slate-700 w-full py-3 px-8 outline-none text-slate-300 font-bold shadow-md hover:text-white shadow-primary rounded-xl hover:bg-green-500 hover:scale-105 duration-500 transition-all"
 					>
 						{loading ? "Sending..." : "Send"}
 					</button>

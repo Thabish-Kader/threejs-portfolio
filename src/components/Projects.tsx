@@ -23,34 +23,13 @@ const ProjectCard = ({
 }) => {
 	return (
 		<motion.div variants={fadeIn("up", "spring", index * 0.5, 1.5)}>
-			<Tilt className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full">
+			<Tilt className="bg-slate-800 p-5 rounded-2xl sm:w-[300px] w-full">
 				<div className="relative w-full h-[230px]">
 					<img
 						src={project.image}
 						alt={project.name}
 						className="w-full h-full object-cover rounded-2xl"
 					/>
-
-					<div className="absolute inset-0 flex justify-end m-3 gap-x-2">
-						<div
-							onClick={() =>
-								window.open(project.codeLink, "_blank")
-							}
-							className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-						>
-							<img
-								src={github}
-								alt="github"
-								className="w-1/2 h-1/2 object-contain"
-							/>
-						</div>
-						<div
-							onClick={() => window.open(project.live, "_blank")}
-							className="bg-purple-900 w-10 h-10 rounded-lg flex justify-center items-center cursor-pointer"
-						>
-							Live
-						</div>
-					</div>
 				</div>
 
 				{/* name description */}
@@ -73,17 +52,37 @@ const ProjectCard = ({
 						</p>
 					))}
 				</div>
+				<div className="flex gap-5 items-center mt-5">
+					<div
+						onClick={() => window.open(project.codeLink, "_blank")}
+						className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+					>
+						<img
+							src={github}
+							alt="github"
+							className="w-1/2 h-1/2 object-contain"
+						/>
+					</div>
+					<div
+						onClick={() => window.open(project.live, "_blank")}
+						className="bg-theme flex-1  font-semibold tracking-wider text-slate-800 hover:scale-110 hover:bg-white duration-500 transition-all w-10 h-10 rounded-lg flex justify-center items-center cursor-pointer"
+					>
+						Check it out
+					</div>
+				</div>
 			</Tilt>
 		</motion.div>
 	);
 };
 
-const Works = () => {
+const Projects = () => {
 	return (
 		<>
 			<motion.div variants={textVariant(1.5)}>
-				<p className="sectionSubText">The Projects I have worked on</p>
-				<h2 className="sectionHeadText">Projects</h2>
+				<p className="sectionSubHeading">
+					The Projects I have worked on
+				</p>
+				<h2 className="sectionHeading">Projects</h2>
 			</motion.div>
 
 			<div className="w-full flex">
@@ -110,4 +109,4 @@ const Works = () => {
 	);
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Projects, "");
