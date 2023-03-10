@@ -15,9 +15,9 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
 		<Tilt className="xs:w-[250px] w-full">
 			<motion.div
 				variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-				className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+				className="w-full bg-gradient-to-r from-theme via-purple-500 to-theme-secondary p-[1px] rounded-[20px] shadow-card"
 			>
-				<div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col justify-evenly items-center ">
+				<div className="bg-slate-800 rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col justify-evenly items-center ">
 					<img
 						src={icon}
 						alt={title}
@@ -36,13 +36,13 @@ const About = () => {
 	return (
 		<>
 			<motion.div variants={textVariant(1.5)}>
-				<p className="sectionSubText">About</p>
-				<h2 className="sectionHeadText">Overview</h2>
+				<p className="sectionSubHeading">About</p>
+				<h2 className="sectionHeading">Overview</h2>
 			</motion.div>
 
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
-				className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+				className="mt-4 text-gray-500 text-[17px] max-w-3xl leading-[30px]"
 			>
 				Hey there, fellow techies! I'm thabish, a software engineer who
 				loves creating beautiful and functional web applications. With a

@@ -17,9 +17,9 @@ type ExperienceProps = {
 	points: string[];
 };
 
-const ExperienceCard = ({ exp }: { exp: ExperienceProps }) => (
+const TimelineCard = ({ exp }: { exp: ExperienceProps }) => (
 	<VerticalTimelineElement
-		contentStyle={{ background: "#1d1836", color: "#fff" }}
+		contentStyle={{ background: "#1E293B", color: "#94A3B8" }}
 		contentArrowStyle={{ borderRight: "7px solid #232631" }}
 		date={exp.date}
 		iconStyle={{ background: exp.iconBg }}
@@ -34,15 +34,15 @@ const ExperienceCard = ({ exp }: { exp: ExperienceProps }) => (
 		}
 	>
 		<div>
-			<h3 className="text-white text-[24px] font-bold">{exp.title}</h3>
-			<p className="text-secondary text-[16px] font-semibold">
+			<h3 className="text-white  text-[24px] font-bold">{exp.title}</h3>
+			<p className="text-slate-400 text-[16px] font-semibold">
 				{exp.company_name}
 			</p>
 			<ul className="mt-5 list-disc ml-5 space-y-2">
 				{exp.points.map((point, i) => (
 					<li
 						key={i}
-						className="text-white-100 text-[14px] pl-1 tracking-wider"
+						className="text-slate-300 text-[14px] pl-1 tracking-wider"
 					>
 						{point}
 					</li>
@@ -52,18 +52,18 @@ const ExperienceCard = ({ exp }: { exp: ExperienceProps }) => (
 	</VerticalTimelineElement>
 );
 
-const Experience = () => {
+const Timeline = () => {
 	return (
 		<>
 			<motion.div variants={textVariant(1.5)}>
-				<p className="sectionSubText">What I have done so far</p>
-				<h2 className="sectionHeadText">Journey</h2>
+				<p className="sectionSubHeading">What I have done so far</p>
+				<h2 className="sectionHeading">Journey</h2>
 			</motion.div>
 
 			<div className="mt-20 flex flex-col">
 				<VerticalTimeline>
 					{experiences.map((exp, i) => (
-						<ExperienceCard key={i} exp={exp} />
+						<TimelineCard key={i} exp={exp} />
 					))}
 				</VerticalTimeline>
 			</div>
@@ -71,4 +71,4 @@ const Experience = () => {
 	);
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Timeline, "work");

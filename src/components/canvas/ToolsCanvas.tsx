@@ -20,7 +20,6 @@ const Ball = ({ imgUrl }: { imgUrl: string }) => {
 			<mesh castShadow receiveShadow scale={2.75}>
 				<icosahedronGeometry args={[1, 1]} />
 				<meshStandardMaterial
-					color="#fff8eb"
 					polygonOffset
 					polygonOffsetFactor={-5}
 					flatShading
@@ -37,7 +36,7 @@ const Ball = ({ imgUrl }: { imgUrl: string }) => {
 	);
 };
 
-const BallCanvas = ({ icon }: { icon: string }) => {
+const ToolsCanvas = ({ icon }: { icon: string }) => {
 	return (
 		<Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
 			<Suspense fallback={<MyLoader />}>
@@ -49,4 +48,4 @@ const BallCanvas = ({ icon }: { icon: string }) => {
 	);
 };
 
-export default BallCanvas;
+export default ToolsCanvas;

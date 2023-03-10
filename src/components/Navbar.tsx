@@ -1,13 +1,15 @@
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { logo, menu, close } from "../assets";
+import logo from "../assets/logo.svg";
+import menu from "../assets/menu.svg";
+import close from "../assets/close.svg";
 import { SocialIcon } from "react-social-icons";
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(true);
 	return (
-		<nav className="paddingX w-full flex items-center py-5 fixed top-0 z-20 bg-primary">
+		<nav className="paddingX w-full flex items-center py-5 fixed top-0 z-20 bg-primary/60">
 			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
 				<Link
 					to="/"

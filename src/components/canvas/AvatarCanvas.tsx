@@ -38,7 +38,7 @@ const Avatar = ({ smallScreen }: { smallScreen: boolean }) => {
 				position={[smallScreen ? -2 : -3.7, smallScreen ? 0 : 0.3, 0]}
 			>
 				<button
-					className="bg-purple-500 text-black w-[100px] p-2  rounded-lg text-xs sm:text-lg sm:w-[200px] hover:bg-white hover:scale-110 duration-500"
+					className="bg-theme text-black w-[100px] p-2  rounded-lg text-xs sm:text-lg sm:w-[200px] hover:bg-white hover:scale-110 duration-500"
 					onClick={() => {
 						setIndex((index + 1) % names.length);
 						setIsClicked(!isClicked);
