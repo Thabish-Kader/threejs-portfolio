@@ -19,7 +19,7 @@ const App = () => {
 					<Hero />
 				</div>
 
-				{/* <About />
+				<About />
 				<Experience />
 				<Tech />
 				<Works />
@@ -27,11 +27,8 @@ const App = () => {
 				<div className="relative z-0">
 					<Contact />
 					<StartsCanvas />
-				</div> */}
+				</div>
 			</div>
-			{/* <div className="h-screen">
-				<AvatarCanvas />
-			</div> */}
 		</BrowserRouter>
 	);
 };

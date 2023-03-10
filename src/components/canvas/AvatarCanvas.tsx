@@ -1,25 +1,20 @@
 import {
-	Environment,
 	Html,
 	OrbitControls,
+	Preload,
 	useAnimations,
 	useGLTF,
 } from "@react-three/drei";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
-import { MeshStandardMaterial } from "three";
-import { easing } from "maath";
+
 import MyLoader from "../MyLoader";
-import { ClickMe } from "../ClickMe";
 
 const Avatar = ({ smallScreen }: { smallScreen: boolean }) => {
 	const [index, setIndex] = useState(1);
-	const { scene, nodes, animations } = useGLTF("/avatar.glb") as any;
-	const [hovered, setHovered] = useState(false);
-
-	const avatar = useGLTF("/myavatar.glb") as any;
+	const avatar = useGLTF("/myavatar.glb");
 	const { actions, names } = useAnimations(avatar.animations, avatar.scene);
-
+	const [isClicked, setIsClicked] = useState(false);
 	useEffect(() => {
 		actions[names[index]]?.reset().fadeIn(0.5).play();
 
@@ -44,9 +39,12 @@ const Avatar = ({ smallScreen }: { smallScreen: boolean }) => {
 			>
 				<button
 					className="bg-purple-500 text-black w-[100px] p-2  rounded-lg text-xs sm:text-lg sm:w-[200px] hover:bg-white hover:scale-110 duration-500"
-					onClick={() => setIndex((index + 1) % names.length)}
+					onClick={() => {
+						setIndex((index + 1) % names.length);
+						setIsClicked(!isClicked);
+					}}
 				>
-					Impress Me!
+					{isClicked ? "Check out my moves" : "Impress Me!"}
 				</button>
 			</Html>
 		</group>
@@ -77,6 +75,7 @@ export const AvatarCanvas = () => {
 			<Suspense fallback={<MyLoader />}>
 				<Avatar smallScreen={smallScreen} />
 			</Suspense>
+			<Preload all />
 		</Canvas>
 	);
 };
