@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import HeroCanvas from "./canvas/HeroCanvas";
+import { AvatarCanvas } from "./canvas/AvatarCanvas";
 
 const Hero = () => {
 	return (
@@ -8,27 +9,26 @@ const Hero = () => {
 			<div className="paddingX absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5">
 				<div className="flex flex-col justify-center items-center mt-5">
 					{/* dot */}
-					<div className="w-5 h-5 rounded-full bg-[#915eff]" />
+					<div className="w-5 h-5 rounded-full bg-theme" />
 					{/* line */}
-					<div className="w-1 sm:h-80 h-40 violet-gradient" />
+					<div className="w-1 sm:h-80 h-40 bg-gradient-to-b from-theme to-transparent" />
 				</div>
 				{/* hello message */}
 				<div>
 					<h1 className="heroHeadText">
-						Hi, I'm <span className="text-[#915eff]">thabish</span>
+						Hi, I'm <span className="text-theme">thabish</span>
 					</h1>
 					<p className="hidden sm:block text-lg mt-2 text-white-100 w-[550px]">
-						Welcome to my digital playground, where code meets
-						creativity! Take a peek inside and you'll find a world
-						of pixels and possibilities, where I bring my wildest
-						ideas to life.
+						My code is so clean, my keyboard has never needed a
+						shower.
 						<br />
 						So come on in, explore a little, and let's make some
 						magic together!
 					</p>
 				</div>
 			</div>
-			<HeroCanvas />
+			{/* <HeroCanvas /> */}
+			<AvatarCanvas />
 
 			<div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
 				<a href="#about">

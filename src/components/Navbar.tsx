@@ -1,13 +1,15 @@
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { logo, menu, close } from "../assets";
+import logo from "../assets/logo.svg";
+import menu from "../assets/menu.svg";
+import close from "../assets/close.svg";
 import { SocialIcon } from "react-social-icons";
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(true);
 	return (
-		<nav className="paddingX w-full flex items-center py-5 fixed top-0 z-20 bg-primary">
+		<nav className="paddingX w-full flex items-center py-5 absolute top-0 z-20 bg-black/30">
 			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
 				<Link
 					to="/"
@@ -23,7 +25,7 @@ const Navbar = () => {
 					/>
 					<p className="text-white text-[18px] font-bold cursor-pointer">
 						Thabish &nbsp;
-						<span className="sm:block hidden text-sm text-red-600  tracking-widest">
+						<span className="sm:block hidden text-sm text-theme tracking-widest">
 							| softwareEngineer
 						</span>
 					</p>
@@ -37,36 +39,35 @@ const Navbar = () => {
 
 				<div className=" hidden sm:flex flex-row gap-3">
 					<SocialIcon
-						bgColor="transparent"
-						fgColor="#64ffda"
-						style={{ height: 60, width: 60 }}
+						bgColor="#0961b8"
+						fgColor="#ffffff"
+						style={{ height: 50, width: 50 }}
 						target="_blank"
 						url="https://www.linkedin.com/in/thabish-a-kader-366447224/"
 					/>
 					<SocialIcon
-						bgColor="transparent"
-						fgColor="#64ffda"
-						style={{ height: 60, width: 60 }}
+						bgColor="#ffffff"
+						fgColor="#1c93e4"
+						style={{ height: 50, width: 50 }}
 						target="_blank"
 						url="https://twitter.com/DeveloperTak"
 					/>
 					<SocialIcon
-						bgColor="transparent"
-						fgColor="#64ffda"
-						style={{ height: 60, width: 60 }}
+						bgColor="#000000"
+						fgColor="#ffffff"
+						style={{ height: 50, width: 50 }}
 						target="_blank"
 						url="https://github.com/Thabish-Kader"
 					/>
 					<SocialIcon
-						bgColor="transparent"
-						fgColor="#64ffda"
-						style={{ height: 60, width: 60 }}
+						bgColor="#f10002"
+						fgColor="#ffffff"
+						style={{ height: 50, width: 50 }}
 						target="_blank"
 						url="https://www.youtube.com/channel/UCv4o5GTLBg2IH2P7iYj1nwQ"
 					/>
 				</div>
 				{/* mobile view */}
-				{/* TODO: Change the styling of background of mobile view */}
 				<div className="sm:hidden flex flex-1 justify-end items-center">
 					<img
 						src={toggle ? menu : close}

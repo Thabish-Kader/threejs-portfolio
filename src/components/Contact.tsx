@@ -2,9 +2,11 @@ import { FormEvent, useRef, useState, Fragment } from "react";
 import { SectionWrapper } from "../hoc/SectionWrapper";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
-import EarthCanvas from "./canvas/EarthCanvas";
+
 import emailjs from "@emailjs/browser";
 import { Dialog, Transition } from "@headlessui/react";
+import { SocialIcon } from "react-social-icons";
+import BlobCanvas from "./canvas/BlobCanvas";
 
 const Contact = () => {
 	const formRef = useRef<HTMLFormElement>(null);
@@ -19,6 +21,12 @@ const Contact = () => {
 	const handleSubmit = (e: FormEvent) => {
 		e.preventDefault();
 		setLoading(true);
+		if (form.name === "" || form.email === "") {
+			alert("Name and enail cannot be empty");
+			setLoading(false);
+
+			return;
+		}
 		emailjs
 			.send(
 				"service_oeoqx8n",
@@ -50,10 +58,44 @@ const Contact = () => {
 		<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
 			<motion.div
 				variants={slideIn("left", "tween", 0.2, 1)}
-				className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+				className="flex-[0.75] bg-slate-800 p-8 rounded-2xl"
 			>
-				<p className="sectionSubText">Get in touch</p>
-				<p className="sectionHeadText">Contact</p>
+				<p className="sectionSubHeading">
+					"Contact me before the aliens invade, I'll make sure your
+					project is out of this world!"
+				</p>
+				<p className="sectionHeading">Contact</p>
+				{/* socials */}
+				<div className="flex items-center gap-5">
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#0961b8"
+						style={{ height: 60, width: 60 }}
+						target="_blank"
+						url="https://www.linkedin.com/in/thabish-a-kader-366447224/"
+					/>
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#1c93e4"
+						style={{ height: 50, width: 50 }}
+						target="_blank"
+						url="https://twitter.com/DeveloperTak"
+					/>
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#ffffff"
+						style={{ height: 50, width: 50 }}
+						target="_blank"
+						url="https://github.com/Thabish-Kader"
+					/>
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#f10002"
+						style={{ height: 50, width: 50 }}
+						target="_blank"
+						url="https://www.youtube.com/channel/UCv4o5GTLBg2IH2P7iYj1nwQ"
+					/>
+				</div>
 
 				<form
 					ref={formRef}
@@ -62,8 +104,8 @@ const Contact = () => {
 				>
 					{/* name */}
 					<label htmlFor="" className="flex flex-col">
-						<span className="text-white font-medium mb-4">
-							Your Name
+						<span className="text-slate-300 font-medium mb-4">
+							Name
 						</span>
 						<input
 							type="text"
@@ -73,13 +115,13 @@ const Contact = () => {
 								setForm({ ...form, name: e.target.value })
 							}
 							placeholder="What's your name"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							className="bg-slate-700 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					{/* email */}
 					<label htmlFor="" className="flex flex-col">
-						<span className="text-white font-medium mb-4">
-							Your Email
+						<span className="text-slate-300 font-medium mb-4">
+							Email
 						</span>
 						<input
 							type="email"
@@ -89,14 +131,14 @@ const Contact = () => {
 								setForm({ ...form, email: e.target.value })
 							}
 							placeholder="What's your email"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							className="bg-slate-700 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 
 					{/* message */}
 					<label htmlFor="" className="flex flex-col">
-						<span className="text-white font-medium mb-4">
-							Your message
+						<span className="text-slate-300 font-medium mb-4">
+							Message
 						</span>
 						<textarea
 							rows={7}
@@ -106,12 +148,12 @@ const Contact = () => {
 								setForm({ ...form, message: e.target.value })
 							}
 							placeholder="Would you like to say something?"
-							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+							className="bg-slate-700 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
 					<button
 						type="submit"
-						className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+						className="bg-slate-700 w-full py-3 px-8 outline-none text-slate-300 font-bold shadow-md hover:text-white shadow-primary rounded-xl hover:bg-green-500 hover:scale-105 duration-500 transition-all"
 					>
 						{loading ? "Sending..." : "Send"}
 					</button>
@@ -122,7 +164,7 @@ const Contact = () => {
 				variants={slideIn("right", "tween", 0.2, 1)}
 				className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
 			>
-				<EarthCanvas />
+				<BlobCanvas />
 			</motion.div>
 
 			{/* Pop up Modal */}
