@@ -56,7 +56,9 @@ const Feedbacks = () => {
 		<div className="mt-12 bg-slate-800 rounded-[20px]">
 			<div className="padding bg-slate-800 rounded-2xl min-h-[300px]">
 				<motion.div variants={textVariant(1)}>
-					<p className="sectionSubHeading">What others say</p>
+					<p className="sectionSubHeading">
+						"and they ask why i google myself"
+					</p>
 					<h2 className="sectionHeading">Testimonials.</h2>
 				</motion.div>
 			</div>

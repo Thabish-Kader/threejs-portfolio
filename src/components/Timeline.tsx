@@ -56,7 +56,10 @@ const Timeline = () => {
 	return (
 		<>
 			<motion.div variants={textVariant(1.5)}>
-				<p className="sectionSubHeading">What I have done so far</p>
+				<p className="sectionSubHeading">
+					"I've got a degree in computer science, but my real
+					education came from debugging my own code."
+				</p>
 				<h2 className="sectionHeading">Journey</h2>
 			</motion.div>
 

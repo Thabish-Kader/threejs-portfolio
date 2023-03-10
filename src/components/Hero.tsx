@@ -19,10 +19,8 @@ const Hero = () => {
 						Hi, I'm <span className="text-theme">thabish</span>
 					</h1>
 					<p className="hidden sm:block text-lg mt-2 text-white-100 w-[550px]">
-						Welcome to my digital playground, where code meets
-						creativity! Take a peek inside and you'll find a world
-						of pixels and possibilities, where I bring my wildest
-						ideas to life.
+						My code is so clean, my keyboard has never needed a
+						shower.
 						<br />
 						So come on in, explore a little, and let's make some
 						magic together!

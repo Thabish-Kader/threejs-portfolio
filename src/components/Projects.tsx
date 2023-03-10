@@ -22,8 +22,11 @@ const ProjectCard = ({
 	index: number;
 }) => {
 	return (
-		<motion.div variants={fadeIn("up", "spring", index * 0.5, 1.5)}>
-			<Tilt className="bg-slate-800 p-5 rounded-2xl sm:w-[300px] w-full">
+		<motion.div
+			variants={fadeIn("up", "spring", index * 0.5, 1.5)}
+			className="flex"
+		>
+			<Tilt className="bg-slate-800 flex flex-col p-5 rounded-2xl sm:w-[300px] w-full">
 				<div className="relative w-full h-[230px]">
 					<img
 						src={project.image}
@@ -42,7 +45,7 @@ const ProjectCard = ({
 					</p>
 				</div>
 				{/* tags */}
-				<div className="mt-4 flex flex-wrap gap-2 ">
+				<div className="mt-auto flex flex-wrap gap-2 ">
 					{project.tags.map((tag, i) => (
 						<p
 							key={tag.name}
@@ -52,7 +55,9 @@ const ProjectCard = ({
 						</p>
 					))}
 				</div>
-				<div className="flex gap-5 items-center mt-5">
+				{/* links */}
+
+				<div className="flex gap-5 items-center  mt-5">
 					<div
 						onClick={() => window.open(project.codeLink, "_blank")}
 						className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -80,7 +85,8 @@ const Projects = () => {
 		<>
 			<motion.div variants={textVariant(1.5)}>
 				<p className="sectionSubHeading">
-					The Projects I have worked on
+					"I may have created a few bugs in my projects, but at least
+					I didn't let them reproduce."
 				</p>
 				<h2 className="sectionHeading">Projects</h2>
 			</motion.div>

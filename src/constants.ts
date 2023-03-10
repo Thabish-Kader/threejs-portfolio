@@ -21,7 +21,8 @@ import threejs from "./assets/tech/threejs.svg";
 import typescript from "./assets/tech/typescript.png";
 import git from "./assets/tech/git.png";
 import reddit from "./assets/projects/reddit.png";
-import solemates from "./assets/projects/solemates.png";
+import mern from "./assets/projects/mern.png";
+import graphql from "./assets/projects/graph ql.png";
 import amazon from "./assets/projects/amazon.png";
 import testimonial1 from "./assets/testimonial/testimonial1.jpg";
 
@@ -220,34 +221,34 @@ export const testimonials = [
 		name: "Pranav Babu",
 		designation: "Subscriber",
 		company: "Youtube",
-		image: "https://yt3.ggpht.com/ytc/AL5GRJXlSdJdSceW_Zfw92NEv_QHdqVTkVgDhHmWfiD-vQ=s88-c-k-c0x00ffffff-no-rj",
+		image: "https://yt3.googleusercontent.com/ytc/AL5GRJXlSdJdSceW_Zfw92NEv_QHdqVTkVgDhHmWfiD-vQ=s176-c-k-c0x00ffffff-no-rj",
 		link: "https://www.youtube.com/channel/UCZsquG9rsHptByCDJh983LQ",
 	},
 ];
 
 export const projects = [
 	{
-		name: "3D Brochure Site",
+		name: "MERN Course",
 		description:
-			'The "Soule Mates" project was built using Three.js, React Three Fiber, and GSAP to explore the possibilities of animation in Three.js. The project is a visually engaging experience that showcases the power of these three technologies when used together.',
+			"Created a course on MERN stack on how to create a full-stack web application using the MERN stack, including database design. I am happy to report that the course has been very well received by viewers! Many viewers have provided positive feedback, stating that they found the course material to be clear, engaging, and informative.",
 		tags: [
 			{
-				name: "threejs",
+				name: "MERN",
 				color: "text-white",
 			},
 			{
-				name: "react-three-fiber",
+				name: "state management",
 				color: "text-blue-600",
 			},
 			{
-				name: "gsap",
+				name: "typescript",
 				color: "text-green-600",
 			},
 		],
-		image: solemates,
+		image: mern,
 		codeLink:
 			"https://github.com/Thabish-Kader/r3f-scroll/tree/main/scroll-based-animaiton",
-		live: "https://r3f-scroll-three.vercel.app/",
+		live: "https://github.com/Thabish-Kader/phone-book-MERN",
 	},
 	{
 		name: "Reddit Clone",
@@ -274,6 +275,32 @@ export const projects = [
 		image: reddit,
 		codeLink: "https://github.com/Thabish-Kader/reddit-next-app",
 		live: "https://reddit-next-app.vercel.app/",
+	},
+	{
+		name: "GraphQl Course",
+		description:
+			'A "Reddit clone" built using Next.js, Firebase, NextAuth, and GraphQL is a highly scalable, real-time, and dynamic social media website that closely mimics the features and user experience of the original Reddit website.',
+		tags: [
+			{
+				name: "graphql",
+				color: "text-pink-500",
+			},
+			{
+				name: "nextjs",
+				color: "text-white",
+			},
+			{
+				name: "typescript",
+				color: "text-blue-500",
+			},
+			{
+				name: "tailwind",
+				color: "text-green-500",
+			},
+		],
+		image: graphql,
+		codeLink: "https://github.com/Thabish-Kader/Nextjs13-graphql",
+		live: "https://www.youtube.com/watch?v=ufKuYohCt0w&t=3281s",
 	},
 	{
 		name: "Amazon Clone",

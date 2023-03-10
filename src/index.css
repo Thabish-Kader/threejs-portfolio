@@ -212,6 +212,6 @@
 		@apply font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] tracking-widest text-theme animate-pulse;
 	}
 	.sectionSubHeading {
-		@apply text-theme-secondary font-semibold sm:text-[18px] text-[14px]  uppercase tracking-widest;
+		@apply text-theme-secondary font-semibold sm:text-[18px] text-[14px]  uppercase tracking-widest italic;
 	}
 }

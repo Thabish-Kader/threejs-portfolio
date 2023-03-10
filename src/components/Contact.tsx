@@ -5,6 +5,7 @@ import { slideIn } from "../utils/motion";
 import EarthCanvas from "./canvas/EarthCanvas";
 import emailjs from "@emailjs/browser";
 import { Dialog, Transition } from "@headlessui/react";
+import { SocialIcon } from "react-social-icons";
 
 const Contact = () => {
 	const formRef = useRef<HTMLFormElement>(null);
@@ -52,8 +53,42 @@ const Contact = () => {
 				variants={slideIn("left", "tween", 0.2, 1)}
 				className="flex-[0.75] bg-slate-800 p-8 rounded-2xl"
 			>
-				<p className="sectionSubHeading">Get in touch</p>
+				<p className="sectionSubHeading">
+					"Contact me before the aliens invade, I'll make sure your
+					project is out of this world!"
+				</p>
 				<p className="sectionHeading">Contact</p>
+				{/* socials */}
+				<div className="flex items-center gap-5">
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#0961b8"
+						style={{ height: 60, width: 60 }}
+						target="_blank"
+						url="https://www.linkedin.com/in/thabish-a-kader-366447224/"
+					/>
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#1c93e4"
+						style={{ height: 50, width: 50 }}
+						target="_blank"
+						url="https://twitter.com/DeveloperTak"
+					/>
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#ffffff"
+						style={{ height: 50, width: 50 }}
+						target="_blank"
+						url="https://github.com/Thabish-Kader"
+					/>
+					<SocialIcon
+						bgColor="transparent"
+						fgColor="#f10002"
+						style={{ height: 50, width: 50 }}
+						target="_blank"
+						url="https://www.youtube.com/channel/UCv4o5GTLBg2IH2P7iYj1nwQ"
+					/>
+				</div>
 
 				<form
 					ref={formRef}
