@@ -7,7 +7,8 @@ import Projects from "./components/Projects";
 import Tech from "./components/Tech";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
-import StartsCanvas from "./components/canvas/StarsCanvas";
+
+import BlobCanvas from "./components/canvas/BlobCanvas";
 
 const App = () => {
 	return (
@@ -25,7 +26,6 @@ const App = () => {
 				<Feedbacks />
 				<div className="relative z-0">
 					<Contact />
-					<StartsCanvas />
 				</div>
 			</div>
 		</BrowserRouter>

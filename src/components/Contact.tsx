@@ -2,10 +2,11 @@ import { FormEvent, useRef, useState, Fragment } from "react";
 import { SectionWrapper } from "../hoc/SectionWrapper";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
-import EarthCanvas from "./canvas/EarthCanvas";
+
 import emailjs from "@emailjs/browser";
 import { Dialog, Transition } from "@headlessui/react";
 import { SocialIcon } from "react-social-icons";
+import BlobCanvas from "./canvas/BlobCanvas";
 
 const Contact = () => {
 	const formRef = useRef<HTMLFormElement>(null);
@@ -20,6 +21,12 @@ const Contact = () => {
 	const handleSubmit = (e: FormEvent) => {
 		e.preventDefault();
 		setLoading(true);
+		if (form.name === "" || form.email === "") {
+			alert("Name and enail cannot be empty");
+			setLoading(false);
+
+			return;
+		}
 		emailjs
 			.send(
 				"service_oeoqx8n",
@@ -157,7 +164,7 @@ const Contact = () => {
 				variants={slideIn("right", "tween", 0.2, 1)}
 				className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
 			>
-				<EarthCanvas />
+				<BlobCanvas />
 			</motion.div>
 
 			{/* Pop up Modal */}

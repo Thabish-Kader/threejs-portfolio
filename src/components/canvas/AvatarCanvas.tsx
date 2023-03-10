@@ -68,10 +68,10 @@ export const AvatarCanvas = () => {
 	}, []);
 
 	return (
-		<Canvas>
+		<Canvas dpr={[0, 2]}>
 			<ambientLight intensity={0.5} />
 			<pointLight position={[1, 1, 1]} />
-			<OrbitControls enableZoom={false} />
+			<OrbitControls enabled={false} />
 			<Suspense fallback={<MyLoader />}>
 				<Avatar smallScreen={smallScreen} />
 			</Suspense>
