@@ -8,3 +8,7 @@
 
 <br/>
 <br/>
+
+This is my second attempt to createing a personal portfolio. After learing three js. [Live Demo](https://threejs-portfolio-4qhb.vercel.app/)
+
+[Personal portfolio V_1](https://my-portfolio-ivory-ten.vercel.app/)
