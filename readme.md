@@ -9,7 +9,7 @@
 <br/>
 <br/>
 
-This is my second attempt to createing a personal portfolio. After learing three js. [Live Demo](https://threejs-portfolio-4qhb.vercel.app/). This time around i tried to create a site which incorporates more of my tastes (which means a lot of bad color choices :sweat_smile:). But i think it came out alright. Which is completely different from the approach i was going for with my [first portfolio](https://my-portfolio-ivory-ten.vercel.app/) which is more minimalistic. This time around i wanted to throw in everything i have learnt so far so I used react three fiber to create the 3D Avatar, technologies and the blob in the contact me section and framer motion for the animation. The blob in the contact me section uses shaders. Which i learn from this [article](https://blog.maximeheckel.com/posts/the-study-of-shaders-with-react-three-fiber/). Just
+This is my second attempt to createing a personal portfolio. After learing three js. [Live Demo](https://threejs-portfolio-4qhb.vercel.app/). This time around i tried to create a site which incorporates more of my tastes (which means a lot of bad color choices :sweat_smile:). But i think it came out alright. Which is completely different from the approach i was going for with my [first portfolio](https://my-portfolio-ivory-ten.vercel.app/) which is more minimalistic. This time around i wanted to throw in everything i have learnt so far so I used react three fiber to create the 3D Avatar, technologies and the blob in the contact me section and framer motion for the animation. The blob in the contact me section uses shaders. Which i learnt from this [article](https://blog.maximeheckel.com/posts/the-study-of-shaders-with-react-three-fiber/).
 
 ## Technologies
 
