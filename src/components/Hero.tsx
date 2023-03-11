@@ -16,7 +16,7 @@ const Hero = () => {
 					<h1 className="heroHeadText">
 						Hi, I'm <span className="text-theme">thabish</span>
 					</h1>
-					<p className="hidden sm:block text-lg mt-2 text-white-100 w-[550px]">
+					<p className="hidden sm:block text-lg mt-2 text-white w-[550px]">
 						My code is so clean, my keyboard has never needed a
 						shower.
 						<br />
@@ -25,7 +25,7 @@ const Hero = () => {
 					</p>
 				</div>
 			</div>
-			{/* <HeroCanvas /> */}
+
 			<AvatarCanvas />
 
 			<div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
