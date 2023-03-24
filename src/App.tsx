@@ -4,11 +4,13 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Timeline from "./components/Timeline";
 import Projects from "./components/Projects";
-import Tech from "./components/Tech";
+
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
 
-import BlobCanvas from "./components/canvas/BlobCanvas";
+import { ChatBotCanvas } from "./components/canvas/ChatBotCanvas";
+
+import { AppContext, IsPlayingProvider } from "./context/IsPlayingContext";
 
 const App = () => {
 	return (
@@ -21,7 +23,10 @@ const App = () => {
 
 				<About />
 				<Timeline />
-				<Tech />
+				<IsPlayingProvider>
+					<ChatBotCanvas />
+				</IsPlayingProvider>
+
 				<Projects />
 				<Feedbacks />
 				<div className="relative z-0">
