@@ -20,10 +20,10 @@ import tailwind from "./assets/tech/tailwind.png";
 import threejs from "./assets/tech/threejs.svg";
 import typescript from "./assets/tech/typescript.png";
 import git from "./assets/tech/git.png";
-import reddit from "./assets/projects/reddit.png";
+import chatbot from "./assets/projects/3dchatbot.png";
 import mern from "./assets/projects/mern.png";
 import graphql from "./assets/projects/graph ql.png";
-import amazon from "./assets/projects/amazon.png";
+import dalle from "./assets/projects/dall-e clone.png";
 import testimonial1 from "./assets/testimonial/testimonial1.jpg";
 
 export const navLinks = [
@@ -251,30 +251,30 @@ export const projects = [
 		live: "https://github.com/Thabish-Kader/phone-book-MERN",
 	},
 	{
-		name: "Reddit Clone",
+		name: "3D AI Bot",
 		description:
-			'A "Reddit clone" built using Next.js, Firebase, NextAuth, and GraphQL is a highly scalable, real-time, and dynamic social media website that closely mimics the features and user experience of the original Reddit website.',
+			"A 3D AI bot built with React Three Fiber. Interact with the future of AI in a fully immersive and intuitive way. Come and experience it for yourself!",
 		tags: [
 			{
 				name: "react",
 				color: "text-blue-500",
 			},
 			{
-				name: "nextjs",
+				name: "threejs",
 				color: "text-white",
 			},
 			{
-				name: "firebase",
+				name: "openai",
 				color: "text-yellow-500",
 			},
 			{
-				name: "tailwind",
+				name: "typescript",
 				color: "text-green-500",
 			},
 		],
-		image: reddit,
-		codeLink: "https://github.com/Thabish-Kader/reddit-next-app",
-		live: "https://reddit-next-app.vercel.app/",
+		image: chatbot,
+		codeLink: "https://github.com/Thabish-Kader/3d-chatbot",
+		live: "https://3d-chatbot.vercel.app/",
 	},
 	{
 		name: "GraphQl Course",
@@ -303,25 +303,25 @@ export const projects = [
 		live: "https://www.youtube.com/watch?v=ufKuYohCt0w&t=3281s",
 	},
 	{
-		name: "Amazon Clone",
+		name: "DALL-E AI Image generator",
 		description:
-			'An "Amazon clone" built using Next.js, Tailwind CSS, NextAuth, Redux, and GraphQL with Stripe API which makes it a highly functional, fast, and dynamic e-commerce website that closely mimics the features and user experience of the original Amazon website.  ',
+			"An AI Image generator which uses openAi dalle api to generate images based on user text. This project uses Next JS 13 for api handling and server side rendering for faster image retrieval from the database. You can share the image which updates the database useing prisma or download the image. ",
 		tags: [
 			{
-				name: "nextjs",
+				name: "Nextjs",
 				color: "text-white",
 			},
 			{
-				name: "redux",
-				color: "text-purple-500",
+				name: "openAi",
+				color: "text-orange-500",
 			},
 			{
-				name: "typescript",
+				name: "Prima",
 				color: "text-blue-800",
 			},
 		],
-		image: amazon,
-		codeLink: "https://github.com/Thabish-Kader/Amazon-next-app",
-		live: "https://amazon-next-app-zqtc.vercel.app/",
+		image: dalle,
+		codeLink: "https://github.com/Thabish-Kader/dall-E-nextjs",
+		live: "https://www.youtube.com/watch?v=2mXr1TAu06U",
 	},
 ];
