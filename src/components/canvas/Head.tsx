@@ -81,7 +81,7 @@ const Head = () => {
 	);
 };
 
-export const ChatBotCanvas = () => {
+export const HeadCanvas = () => {
 	return (
 		<section className="h-screen relative top-0">
 			<Canvas>
