@@ -22,7 +22,7 @@ import typescript from "./assets/tech/typescript.png";
 import git from "./assets/tech/git.png";
 import chatbot from "./assets/projects/3dchatbot.png";
 import mern from "./assets/projects/mern.png";
-import graphql from "./assets/projects/graph ql.png";
+import saasLogo from "./assets/icon.png";
 import dalle from "./assets/projects/dall-e clone.png";
 import testimonial1 from "./assets/testimonial/testimonial1.jpg";
 
@@ -191,8 +191,19 @@ export const experiences = [
 		points: [
 			"Integrate Three.js and React Three Fiber with other web technologies, such as React and WebGL to create complex and interactive 3D websites.",
 			"Creating and manipulating 3D objects in web ",
-			"Worked with 3D space and camera controls",
-			"Implemented lighting and shading",
+			"Built 3 freelance projects.",
+		],
+	},
+	{
+		title: "Lead Developer",
+		company_name: "ProductifyIt",
+		icon: saasLogo,
+		iconBg: "#E6DEDD",
+		date: "Jan 2023 - present",
+		points: [
+			"Built a SaaS for entrepreneur to design their digital products.",
+			"Utilized AWS.",
+			"Integrated Stripe Subscriptions.",
 		],
 	},
 ];
@@ -228,16 +239,16 @@ export const testimonials = [
 
 export const projects = [
 	{
-		name: "MERN Course",
+		name: "ProductifyIt",
 		description:
-			"Created a course on MERN stack on how to create a full-stack web application using the MERN stack, including database design. I am happy to report that the course has been very well received by viewers! Many viewers have provided positive feedback, stating that they found the course material to be clear, engaging, and informative.",
+			"A SaaS built to make a lasting impression on prospects and skyrocket sales with the platform, providing creators with the tools to design compelling digital products for their website, applications, or brand in 3D.",
 		tags: [
 			{
-				name: "MERN",
+				name: "Three Js",
 				color: "text-white",
 			},
 			{
-				name: "state management",
+				name: "Next JS",
 				color: "text-blue-600",
 			},
 			{
@@ -245,10 +256,9 @@ export const projects = [
 				color: "text-green-600",
 			},
 		],
-		image: mern,
-		codeLink:
-			"https://github.com/Thabish-Kader/r3f-scroll/tree/main/scroll-based-animaiton",
-		live: "https://github.com/Thabish-Kader/phone-book-MERN",
+		image: saasLogo,
+		codeLink: "https://github.com/Thabish-Kader/productifyit",
+		live: "https://www.productifyit.com/",
 	},
 	{
 		name: "3D AI Bot",
@@ -276,32 +286,7 @@ export const projects = [
 		codeLink: "https://github.com/Thabish-Kader/3d-chatbot",
 		live: "https://3d-chatbot.vercel.app/",
 	},
-	{
-		name: "GraphQl Course",
-		description:
-			'A "Reddit clone" built using Next.js, Firebase, NextAuth, and GraphQL is a highly scalable, real-time, and dynamic social media website that closely mimics the features and user experience of the original Reddit website.',
-		tags: [
-			{
-				name: "graphql",
-				color: "text-pink-500",
-			},
-			{
-				name: "nextjs",
-				color: "text-white",
-			},
-			{
-				name: "typescript",
-				color: "text-blue-500",
-			},
-			{
-				name: "tailwind",
-				color: "text-green-500",
-			},
-		],
-		image: graphql,
-		codeLink: "https://github.com/Thabish-Kader/Nextjs13-graphql",
-		live: "https://www.youtube.com/watch?v=ufKuYohCt0w&t=3281s",
-	},
+
 	{
 		name: "DALL-E AI Image generator",
 		description:

@@ -23,9 +23,9 @@ const App = () => {
 
 				<About />
 				<Timeline />
-				<IsPlayingProvider>
+				{/* <IsPlayingProvider>
 					<HeadCanvas />
-				</IsPlayingProvider>
+				</IsPlayingProvider> */}
 
 				<Projects />
 				<Feedbacks />
